@@ -1,0 +1,1402 @@
+@font-face {
+    font-family: gilroy-bold;
+    src: url(../assets/fonts/SVN-GilroyBold.ttf);
+}
+@font-face {
+    font-family: sfprodisplay-bold;
+    src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
+@font-face {
+    font-family: sfprodisplay-medium;
+    src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: notosans-black;
+    src: url(../assets/fonts/NotoSansGeorgian-Black.ttf);
+}
+
+@font-face {
+    font-family: poppins-black;
+    src: url(../assets/fonts/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fceed5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    height: 52em;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+.top-yellow-rectangle{
+    position: absolute;
+    z-index: 0;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    margin: 0 auto;
+    width: 90%;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 3rem 0;
+    display: flex;
+    left: 50%; 
+    transform: translateX(-50%);
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.dropdown-menu.active{
+    opacity: 1;
+}
+
+
+.dropdown-join-button{
+    position: relative;
+    width: 214px;
+    height: 44px;
+    background-color: #003459;
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-logo{
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.logo-nav-list{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-link{
+    list-style: none; 
+    font-family: sfprodisplay-bold;
+    font-size: 1rem;
+    color: #003459;
+    cursor: pointer;
+}
+
+.nav-links{
+    text-decoration: none;
+}
+
+.home-nav-link a:link, a:visited{
+    color: #003459;;
+}
+
+.home-nav-link{
+    cursor: pointer;
+}
+
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.join-button{
+    position: relative;
+    width: 214px;
+    height: 44px;
+    background-color: #003459;
+    border-radius: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.join-the-community{
+    font-family: sfprodisplay-bold;
+    font-size: 1rem;
+    color: #fdfdfd;
+}
+
+.vnd-frame{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.main-logo{
+    max-width: 100%;
+}
+
+.menu-icon{
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.main-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+
+.main-title{
+    padding-top: 2.4rem;
+    font-family: gilroy-bold;
+    font-size: 2.9rem;
+    color: #002a48;
+    position: relative;
+    z-index: 2;
+}
+
+.secondary-title{
+    font-family: sfprodisplay-bold;
+    color: #002a48;
+    font-size: 1.75rem;
+}
+
+.main-paragraph{
+    font-family: sfprodisplay-medium;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: #242b33;
+    max-width: 50ch;
+}
+
+.explore{
+    display: flex;
+    padding-top: 2rem;
+    padding: 2rem 0 1.5rem;
+    max-width: 100%;
+    gap: 0.6rem;
+}
+
+.intro{
+    border: 1.5px solid #003459;
+    display: flex;
+    align-items: center;
+    border-radius: 57px;
+    padding: 10px 28px;
+    width: 167px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.intro span{
+    font-family: sfprodisplay-medium;
+    color: #003459;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.explore-now{
+    border: 1.5px solid #003459;
+    align-self: center;
+    padding: 14px 33px 10px;
+    border-radius: 57px;
+    background-color: #003459;
+    width: 163px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.explore-now span{
+    font-family: sfprodisplay-medium;
+    font-size: 16px;
+    color: #fdfdfd;
+}
+
+.blue-main-rectangle{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 40%;
+}
+
+.bottom-yellow-rectangle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 40%;
+}
+
+.main-image-woman{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 40%;
+    width: 414px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    height: 100vh;
+    flex: 1;
+}
+
+.new-look{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 3rem 0 2rem;
+}
+
+
+.whats-new{
+    font-family: sfprodisplay-medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.take-a-look{
+    font-family: sfprodisplay-bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #003459;
+}
+
+
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.dog-wrapper{
+    background-color: #fafafa; /* #fdfdfd */
+    border-radius: 12px;
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+}
+
+.dog-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 8px 0;
+}
+
+.alaskan{
+    border-radius: 35px;
+}
+
+.dogs-info-wrapper{
+    padding: 0 4px 4px;
+}
+
+.dog-names{
+    font-family: sfprodisplay-bold;
+    font-size: 14px;
+    color: #00171f;
+    margin-top: 12px;
+}
+
+.gene, .age{
+    font-family: sfprodisplay-medium;
+    font-size: 12px;
+    line-height: 18px;
+    color: #667479;
+}
+
+.dog-info-strong{
+    font-family: sfprodisplay-bold;
+}
+
+.homepage-price{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+
+.view-more-upper-dogs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view-more-button-upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #003459;
+    width: auto;
+    border-radius: 57px;
+    background-color: #fff;
+    padding: 0 2rem;
+    margin-right: 3rem;
+
+
+    /* margin: 2rem auto 3rem;
+    max-width: 382px;
+    
+     */
+}
+
+
+.view-more-text{
+    font-family: sfprodisplay-medium;
+    font-size: 1rem;
+    color: #003459;
+}
+
+.view-more-button{
+    margin: 2rem 3rem;
+    max-width: 100%;
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    background-color: #fff;
+}
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0 10px;
+}
+
+.view-more-text{
+    font-family: sfprodisplay-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003459;
+}
+
+
+
+
+
+.banner{
+    border-radius: 20px;
+    max-width: 100%;
+    background-color: #003459;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.yellow-top-banner-rectangle{
+    position: absolute;
+    min-width: 200%;
+    bottom: 10%;
+    left: -40%;
+}
+
+.float-right{
+    position: absolute;
+    float: right;
+}
+
+.banner-main-title{
+    font-family: gilroy-bold;
+    color: #002a48;
+    text-transform: capitalize;
+    font-size: 2.9rem;
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.banner-secondary-title{
+    font-size: 24px;
+    line-height: 36px;
+    position: relative;
+    font-family: sfprodisplay-bold;
+    color: #002a48;
+    font-size: 1.75rem;
+}
+
+.banner-p{
+    position: relative;
+    text-align: center;
+    font-family: sfprodisplay-medium;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: #242b33;
+    margin-top: 1rem 0 2rem;
+    max-width: 52ch;
+}
+
+.banner-explore{
+    display: flex;
+    gap: 0.6rem;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 32px 0 25px;
+}
+
+.blue-bottom-banner-rectangle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.girl-kissing-puppy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 40%;
+    height: auto;
+}
+
+
+
+
+.view-more-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.view-more-2{
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.view-more-text-2{
+    font-family: sfprodisplay-medium;
+    font-size: 1rem;
+    color: #003459;
+}
+
+.choose{
+    font-family: sfprodisplay-medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.products-title{
+    font-family: sfprodisplay-bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #003459;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 3rem;
+}
+
+.product-wrapper{
+    background-color: #fafafa;
+    border-radius: 12px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+
+.product-wrapper img{
+    padding: 0.5rem;
+}
+
+.product-images{
+    border-radius: 1rem;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.product-info-wrapper{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.product-name{
+    font-family: sfprodisplay-bold;
+    font-size: 1.3rem;
+    color: #00171f;
+    max-width: 20ch;
+}
+
+.product-info{  
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product{
+    font-family: sfprodisplay-medium;
+    font-size: 0.8rem;
+    color: #667479;
+}
+
+.prodcut-info-strong{
+    font-family: sfprodisplay-bold;
+}
+
+.dot{
+    color: #667479;
+}
+
+.size{
+    font-family: sfprodisplay-medium;
+    font-size: 0.8rem;
+    color: #667479;
+}
+
+.size-info-strong{
+    font-family: sfprodisplay-bold;
+
+}
+
+.product-price{
+    font-family: sfprodisplay-bold;
+    font-size: 0.9rem;
+    color: #00171f;
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+}
+
+.toy-shaker-button{
+    display: flex;
+    background-color: #fceed5;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding-left: 0.8rem;
+    gap: 1rem;
+}
+
+.toy-shaker-text{
+    color: #002a48;
+    font-family: sfprodisplay0bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.useful-slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.know{
+    font-family: sfprodisplay-medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.useful{
+    font-family: sfprodisplay-bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #003459;
+}
+
+.slider-arrows{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.right-arrow, .left-arrow{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #003459;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 57px;
+}
+
+
+
+
+
+
+
+
+
+.pomeranian-banner{
+    background-color: #fafafa;
+    max-width: 382px;
+    border-radius: 12px;
+    margin: 20px auto 40px;
+    cursor: pointer;
+}
+
+.pomeranian-banner img{
+    max-width: 100%;
+}
+
+.knowledge-card{
+    padding: 1rem;
+}
+
+.pomeranian-info-wrapper{
+    padding: 0 8px 8px;
+}
+
+.pet-tag{
+    display: flex;
+    width: 88px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: #00a7e7;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0 12px;
+}
+
+.pet-tag-text{
+    font-family: sfprodisplay-bold;
+    font-size: 10px;
+    line-height: 16px;
+    color: #fdfdfd;
+}
+
+.pomeranian-title{
+    font-family: sfprodisplay-bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00171f;
+    margin-bottom: 6px;
+}
+
+.pomeranian-p{
+    font-family: sfprodisplay-medium;
+    font-size: 14px;
+    line-height: 20px;
+}   
+
+
+
+
+
+
+
+
+
+
+.real-life-timer{
+    margin: 0 auto;
+    padding: 2rem 6rem 6rem;
+}
+
+.timer-title{
+    font-family: notosans-black;
+    font-size: 3rem;
+    color: #003459;
+}
+
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.timer-border{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    background-color: #003459;
+    border-radius: 22px;
+}
+
+.count-numbers{
+    font-family: poppins-black;
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.date-counter{
+    font-family: poppins-light;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #ffe7ba;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.registration{
+    max-width: 90%;
+    margin: 40px auto;
+    background-color: #003459;
+    border-radius: 16px;
+}
+
+.register-wrapper{
+    padding: 16px;
+}
+
+.register-title{
+    font-family: sfprodisplay-bold;
+    font-size: 1.25rem;
+    color: #fdfdfd;
+    margin-bottom: 16PX;
+}
+
+.registration-form{
+    width: 350px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.homepage-register-email{
+    height: 48px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #ccd1d2;
+    background-color: #ffffff;
+    padding: 28px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: sfprodisplay-medium;
+}
+
+
+
+.subscribe-now{
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    background-color: #003459;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-now-text{
+    font-family: sfprodisplay-medium;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #fdfdfd;
+}
+
+
+.nav-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.footer-link{
+    list-style: none;
+    font-family: sfprodisplay-medium;
+    font-size: 1.2rem;
+    color: #00171f;
+}
+
+.footer-link a{
+    text-decoration: none;
+}
+
+.footer-media-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.media-link{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.social-border-bottom{
+    border: 1px solid #ccd1d2;
+    min-width: 382px;
+    width: 90%;
+    margin: 0 auto 36px;
+}
+
+.footer-logo{
+    width: 115px;
+    height: 40px;
+    margin-bottom: 32px;
+}
+
+.terms-policy{
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.terms, .policy, .rights-reserved{
+    font-family: sfprodisplay-medium;
+    font-size: 0.75rem;
+    color: #667479;
+}
+
+.rights-reserved{
+    font-size: 10px;
+    margin: 8px 0 20px;
+}
+
+
+
+
+
+
+@media (max-width: 779px){
+
+    .navbar{
+        padding: 2rem 1rem 0;
+    }
+
+    .main-info, .explore{
+        padding-left: 1rem;
+    }
+
+    .register-wrapper{
+        flex-direction: column;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .view-more-upper-dogs{
+        padding: 0 1rem;
+    }
+
+    .grid-container{
+        padding: 0 1rem;
+    }
+
+    .useful-slider{
+        padding: 0 1rem;
+    }
+    
+}
+
+
+
+
+@media (min-width: 780px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .useful-slider{
+        pad: 0 2rem;
+    }
+
+    .new-look{
+        padding: 0 2rem;
+    }
+
+    .register-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .registration-form{
+        width: 100%;
+    }
+
+    .banner{
+        margin: 0 3rem;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1080px){
+    .dropdown-menu{
+        opacity: 0;
+    }
+   
+    .main-info, .explore{
+        padding-left: 1rem;
+    }
+
+    .navbar{
+        padding: 3rem 1rem 0;
+    }
+
+    .nav-icon{
+        visibility: hidden;
+    }
+
+    .logo-nav-list{
+        visibility: hidden;
+    }
+
+    .main-logo{
+        visibility: visible;
+    }
+
+    .menu-icon{
+        visibility: visible;
+        position: absolute;
+        top: auto;
+        right: 0;
+    }
+
+    
+
+}
+
+@media (min-width: 780px) and (max-width: 1080px){
+    .register-wrapper{
+        align-items: center;
+    }
+
+    .products-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .register-wrapper{
+        align-items: center;
+    }
+
+    .useful-slider{
+        padding: 0 3rem;
+    }
+
+}
+
+@media (max-width: 1280px){
+    .products-container{
+        display: none;
+    }
+
+    .pet-sellers{
+        display: none;
+    }
+
+
+    .view-more-flex{
+        display: none;
+    }
+    .seller-logos{
+        display: none;
+    }
+
+    .adoption{
+        display: none;
+    }
+
+    
+    .slider-arrows{
+        display: none;
+    }
+
+    .diet-banner, .biting-banner{
+        display: none;
+    }
+
+    .useful-knowledge{
+        padding: 3rem 0;
+    }
+
+    .view-more-button-upper{
+        display: none;
+    }
+
+    .real-life-timer{
+        display: none;
+    }
+
+}
+
+
+@media(min-width: 1081px){
+
+    .dropdown-menu{
+        display: none;
+    }
+    .navbar{
+        padding: 2rem 8rem 0;
+    }
+
+    .new-look{
+        padding: 0 3rem;
+    }
+
+    .useful-slider{
+        padding: 0 3rem;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+
+    .banner-main-title{
+        text-align: right;
+    }
+
+    .banner-secondary-title{
+        text-align: right;
+    }
+
+    .banner-p{
+        text-align: right;
+    }
+
+    .banner-explore{
+        float: right;
+    }
+
+    .registration-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .subscribe-now{
+        width: 325px;
+        height: auto;
+    }
+
+
+    .homepage-register-email{
+        width: 100%;
+    }
+    
+
+    .main-paragraph{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    
+    .main-info, .explore{
+        padding-left: 8rem;
+    }
+
+    .explore{
+        gap: 2rem;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    
+
+
+    
+}
+
+
+
+@media (min-width: 1280px){
+    .main-title{
+        font-size: 3.5rem;
+    }
+
+    .secondary-title{
+        font-size: 2.2rem;
+    }
+
+    .main-paragraph{
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+
+    .banner-main-title{
+        font-size: 3.5rem;
+    }
+
+    .banner-secondary-title{
+        font-size: 2.2rem;
+    }
+
+    .banner-p{
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+
+
+
+    .pet-sellers{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 3rem 0;
+    }
+    
+    .proud-p{
+        font-family: sfprodisplay-medium;
+        font-size: 1rem;
+        columns: #000000;
+    }
+    
+    .pet-sellers-span{
+        font-family: sfprodisplay-bold;
+        font-size: 1.5rem;
+        color: #003459;
+    }
+    
+    .view-sellers-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid #003459;
+        border-radius: 57px;
+        background-color: #fff;
+        padding: 0.8rem 1.8rem;
+        cursor: pointer;
+    }
+    
+    .view-sellers-text{
+        font-family: sfprodisplay-medium;
+        font-size: 1rem;
+    }
+
+    .seller-logos{
+        height: auto;
+        width: auto;
+        padding: 3rem 3rem 0;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .seller-logos img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .adoption{
+        display: flex;
+        background-color:#ffb775;
+        position: relative;
+        margin: 3rem;
+        border-radius: 20px;
+
+    }
+
+    .dog-hand{
+        position: absolute;
+        width: auto;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+    }
+
+    .pet-knowledge-banner-slider{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .pet-knowledge-banner-slider{
+        padding: 0 3rem;
+    }
+    
+
+    .view-more-button{
+        display: none;
+    }
+
+    .grid-container{
+        padding-bottom: 3rem;
+    }
+
+
+    .nav-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .footer-nav-links{
+        width: 35%;
+    }
+
+    .footer-media-links{
+        width: 20%;
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+
